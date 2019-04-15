@@ -15,13 +15,13 @@ struct Contact {
 	Contact* nextCon;
 };
 
-struct Pegawai{
+struct Indext{
 	char Index[20];
 	Contact* FirstCon;
-	Pegawai* next;
+	Indext* next;
 };
 
-typedef Pegawai* pointerIn;
+typedef Indext* pointerIn;
 typedef Contact* pointerCon;
 typedef pointerIn ListIn;
 
@@ -32,7 +32,7 @@ void createList(ListIn& First)
 
 void createElementIndex(pointerIn& pBaru)
 {
-    pBaru = new Pegawai;
+    pBaru = new Indext;
     cout << "Index : "; cin >> pBaru->Index;
     pBaru->next= NULL;
     pBaru->FirstCon=NULL;
